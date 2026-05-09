@@ -7,7 +7,7 @@ import random
 import sqlite3
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
-
+model = load_model('chatbot_model.h5')
 app = Flask(__name__)
 
 # 1. Initialize AI Brain components

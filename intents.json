@@ -1,0 +1,85 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Anyone there?", "Greetings"],
+      "responses": ["Hello! I am CampusAssist, your college virtual assistant. How can I help you?", "Hi there! Need help with college info?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "I am leaving", "Have a good day"],
+      "responses": ["Goodbye! Have a great day ahead.", "Glad I could help. See you soon!"]
+    },
+    {
+      "tag": "admission",
+      "patterns": ["How to get admission?", "Admission process", "What are the requirements for admission?", "How to apply for B.Tech?", "Eligibility criteria"],
+      "responses": ["Admissions are based on 12th-grade marks. You can apply through the official college website's admission portal."]
+    },
+    {
+      "tag": "fees",
+      "patterns": ["What is the fee structure?", "How much is the tuition fee?", "Hostel fees", "How to pay fees?", "Scholarship options"],
+      "responses": ["The fee structure varies by department. General B.Tech fees are approx 80000 per year. You can pay via the ERP portal or the college accounts office."]
+    },
+    {
+      "tag": "attendance",
+      "patterns": ["Minimum attendance required", "What if I have low attendance?", "Attendance rules", "Is 75 percent mandatory?"],
+      "responses": ["As per university norms, 75% attendance is mandatory to appear for the semester exams. Students below this may face debarment."]
+    },
+    {
+      "tag": "exam",
+      "patterns": ["When are the exams starting?", "Exam timetable", "Backlog exam dates", "Result date", "When will results be declared?"],
+      "responses": ["Internal exams usually happen every month (MSE). End-semester exam dates are posted on the college notice board and the university website."]
+    },
+    {
+      "tag": "library",
+      "patterns": ["Library timings", "How to issue books?", "Is there a digital library?", "Where is the library located?"],
+      "responses": ["The library is open from 8:00 AM to 8:00 PM on weekdays. You need your ID card to issue books."]
+    },
+    {
+      "tag": "placement",
+      "patterns": ["Which companies visit for placement?", "Placement record", "Average package", "Training and Placement cell"],
+      "responses": ["Our T&P cell is very active. Companies like TCS, Infosys, and Wipro are frequent recruiters. The average package last year was [Add Amount] LPA."]
+    },
+    {
+      "tag": "hostel",
+      "patterns": ["Is there a hostel facility?", "Hostel room rent", "Mess food timings", "Hostel for girls and boys"],
+      "responses": ["Yes, separate hostels for boys and girls are available on campus with 24/7 security and mess facilities."]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["College contact number", "Principal's office", "Admission cell email", "How to reach the college?"],
+      "responses": ["You can contact the main office at [Your College Number] or email us at info@college.edu."]
+    },
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+      "responses": ["Hello! I am CampusAssist. How can I help you today?", "Hi there, what can I do for you?"],
+      "context": [""]
+    },
+    {
+      "tag": "faculty_info",
+      "patterns": ["I want to talk to a professor", "Who is teaching AIML?", "Faculty details"],
+      "responses": ["I can help with that. Which department are you interested in?"],
+      "context": ["awaiting_department"]
+    },
+    {
+      "tag": "aiml_dept",
+      "patterns": ["AIML", "Artificial Intelligence", "AI department"],
+      "responses": ["In the AIML department, Mr.R S Kamble is the HOD. Would you like his office hours?"],
+      "context_filter": "awaiting_department"
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": ["I'm sorry, I don't have information on that yet. Try asking about faculty or the syllabus.",
+      "I didn't quite catch that. Could you rephrase your question?",
+      "I'm still learning! Please contact the department office for more specific details."]
+    },
+    {
+      "tag": "faculty_check",
+      "patterns": ["Where are the teachers?", "Is the faculty available?", "Show me faculty status", "check professor status"],
+      "responses": ["Accessing the live campus database..."]
+    }
+  ]
+}
+  

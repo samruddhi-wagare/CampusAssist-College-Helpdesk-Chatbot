@@ -1,3 +1,10 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' # Suppresses the warnings you see in red
+import tensorflow as tf
+
+# Limit TensorFlow memory usage
+tf.config.set_visible_devices([], 'GPU')
+
 from flask import Flask, render_template, request, jsonify
 import nltk
 import pickle
